@@ -1,0 +1,450 @@
+@font-face {
+    font-family: 'Dancing Script';
+    src: url(../fonts/dancingscript/DancingScript-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Georgia';
+    src: url(../fonts/Georgia/Georgia.ttf);
+}
+
+@font-face {
+    font-family: 'Gabriola';
+    src: url(../fonts/gabriola/ufonts.com_gabriola.ttf);
+}
+
+body {
+    background: url("../images/bg.png");
+    font-family: 'Georgia';
+    font-weight: normal;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    background-color: transparent;
+    color: rgb(61, 46, 38);
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: rgb(61, 46, 38);
+    background-color: transparent;
+}
+@media (min-width: 768px) {
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:hover,
+    .navbar-default .navbar-nav > .active > a:focus {
+        color: #fff;
+    }
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav > li > a:focus {
+        color: #fff;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/*Logo section*/
+.logo-section {
+    margin: 30px auto;
+}
+
+.logo a {
+    margin: 0px 30px;
+    font-family: 'Dancing Script', cursive;;
+    font-size: 50px;
+    color: #36302c;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+}
+
+.slogan {
+    display: inline;
+    font-size: 16px;
+    padding: 0 10px;
+    font-family: 'Georgia', serif;
+    font-style: italic;
+}
+
+@media (min-width: 1200px) {
+    .logo-section .visible-lg {
+        display: inline !important;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    .logo-section .visible-md {
+        display: inline !important;
+    }
+
+}
+
+/*navigation*/
+.navbar {
+    margin-top: 3px;
+}
+
+.navbar-default {
+    background: url("../images/bg-mainmenu.png") repeat-x transparent;
+    border-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    margin-top: 5px;
+}
+
+
+.navbar-default .navbar-nav > li > a {
+    color: #88775c;
+}
+.navbar-nav > li > a{
+    line-height: 15px;
+    font-size: 15px;
+
+}
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.logo .blurred {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 250px;
+    height: 80px;
+    background: rgba(255, 255, 255, .5);
+    z-index: -1;
+    -webkit-filter: blur(20px);
+    -moz-filter: blur(20px);
+    -ms-filter: blur(20px);
+    -o-filter: blur(20px);
+    filter: blur(20px);
+}
+
+.glyphicon-star {
+    color: #88775c;
+}
+
+.bg-menu-l {
+    position: absolute;
+    top: 0;
+    left: -39px;
+}
+
+.bg-menu-r {
+    position: absolute;
+    top: 0;
+    right: -39px;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: transparent;
+    color: #fff;
+}
+
+.background-section {
+    padding-top: 12px;
+    background-color: #fff;
+}
+
+.border-section {
+    border: 1px solid #e3d6c0;
+    width: 99%;
+    margin: -8px auto 0;
+}
+
+.inner-background {
+    background-color: #fafaf9;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*slider*/
+.flexslider {
+    margin: 0;
+    background: #e1d9cc;
+    padding-bottom: 10px;
+    border-radius: 0;
+    border: 4px solid #e1d9cc;
+}
+
+#carousel .slides > li {
+    border: 5px solid #c4beb3;
+
+}
+
+#carousel {
+    width: 95%;
+    margin: 0 auto;
+}
+
+#slider {
+    width: 95%;
+    margin: 0 auto;
+    border: 17px solid #e1d9cc;
+
+}
+
+#carousel .flex-viewport {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.flex-direction-nav .flex-prev {
+    left: 30px;
+}
+
+.flex-direction-nav .flex-next {
+    right: 30px;
+}
+
+#slider .flex-direction-nav {
+    display: none;
+}
+
+#carousel .flex-direction-nav a {
+    text-decoration: none;
+    display: block;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background: #c4beb3;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    overflow: hidden;
+    opacity: 1;
+    cursor: pointer;
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    font-weight: normal;
+}
+
+#carousel .flex-direction-nav .flex-disabled {
+    opacity: 1 !important;
+    filter: alpha(opacity=1);
+    cursor: default;
+    z-index: 1;
+}
+
+.flex-direction-nav a:before {
+    font-size: 11px;
+    margin: 9px;
+    line-height: 20px;
+    text-align: center;
+    font-weight: normal;
+    display: inline-block;
+    content: '\f001';
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+/*info -block*/
+.info-block > p {
+    color: #a24e40;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 30px 0 20px 0;
+}
+
+.divider {
+    margin: 0 auto 40px;
+    background-color: #ede9e2;
+    width: 90%;
+    height: 1px;
+}
+
+/*services*/
+.services {
+    font-family: 'Arial', sans-serif;
+    padding-bottom: 60px;
+}
+
+h4{
+    font-family: 'Gabriola';
+    font-size: 28px;
+    color: #3d2e26;
+}
+
+.services p,
+.about-section p,
+.rooms-section p,
+.contacts-section p,
+.services-list,
+.room-list{
+    color: #8d6a57;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.services p {
+    padding: 10px 0 0;
+
+}
+
+.services-list,
+.room-list{
+    padding-left: 20px;
+    list-style-image: url("../images/arrow/arrow.png");
+}
+
+.services-list li {
+    padding: 3px 0;
+}
+
+.welcome-img, .rest-img {
+    width: 294px;
+    height: 125px;
+    border: 4px solid #e3d6c0;
+    margin-bottom: 20px;
+}
+
+.welcome-img {
+    background: url("../images/services/1.jpg") no-repeat center center;
+    background-size: cover;
+
+}
+
+.rest-img {
+    background: url("../images/services/2.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.services .read-more {
+    background: url("../images/button/bg-but-contact.png") no-repeat transparent;
+}
+
+.btn {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    padding: 7px 62px 7px 20px;;
+    color: #fff;
+    font-size: 12px;
+
+}
+
+.btn:hover, .btn:focus, .btn.focus {
+    color: #e7e7e7;
+    text-decoration: none;
+}
+.copyright {
+    width: 99%;
+    margin: 0 auto;
+    padding: 25px 20px;
+    font-family: 'Arial', sans-serif;
+    color: #d5c6b1;
+    font-size: 12px;
+    font-weight: 200;
+    background: url("../images/bg-copyright.png");
+}
+.copyright p{
+    margin: 0;
+}
+.copyright span{
+    color: #8c8375;
+
+}
+/*about page*/
+.about-section {
+    margin-bottom: 40px;
+}
+
+.about-section img {
+    width: 100%;
+    padding-bottom: 20px;
+}
+.about-section p,
+.contacts-section p{
+    font-size: 14px;
+    line-height: 24px;
+}
+/*rooms-section*/
+
+.rooms-section .room-img img {
+    width: 100%;
+}
+.rooms-section .room-img{
+    padding: 10px;
+}
+.rooms-section .column p{
+    padding-left: 10px;
+}
+.rooms-section .column ul{
+    margin-left: 20px;
+}
+.rooms-section .column {
+    padding: 20px 10px;
+}
+/*gallery*/
+.gallery {
+    padding-bottom: 40px;
+    width: 96%;
+    margin: 0 auto;
+}
+.gallery img {
+    width: 100%;
+}
+.gallery-item {
+    padding: 10px;
+}
+
+/*contacts section*/
+.contacts-section{
+    padding: 0 10px 40px;
+}
+.contacts-section iframe{
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+}
+.contacts-section .divider{
+    margin-top: 10px;
+    width: 100%;
+}
+.contacts-section .fa {
+    color: #8d6a57;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    text-align: center;
+
+}
+.contacts-section .fa:hover{
+    color: #6b5042;
+
+}
+.contacts-section .address{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.gm-style .place-card-large{
+    display: none;
+}
