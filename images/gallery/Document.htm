@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://localhost:8000/itStep/homePractice/index -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="./Document_files/style.css">
+<style type="text/css">:root div[class*="unisound-banner"]
+{display:none !important;}</style></head>
+<body>
+    <form action="http://localhost:8000/itStep/homePractice/index" method="get">
+       Tel: <input type="tel">
+        <input type="checkbox">
+        <input type="tel"> <input type="checkbox"><input type="tel"> <input type="checkbox"><input type="tel"> <input type="checkbox"><input type="tel"> <input type="checkbox"><div class="add-number">
+            <span>Add number</span>
+        </div>
+        <button class="send">Send</button>
+    </form>
+
+
+    <script src="./Document_files/jquery.min.js"></script>
+    <script>
+       $(function () {
+           var $addNum =  $('.add-number');
+           var $html = '<input type="tel"> <input type="checkbox">';
+           $addNum.on('click', function () {
+                $addNum.before($html);
+            });
+       });
+    </script>
+
+
+</body></html>

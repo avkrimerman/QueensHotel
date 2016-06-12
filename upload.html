@@ -2,21 +2,118 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/login-style.css"/>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="node_modules/bootstrap-fileinput/css/fileinput.min.css"/>
+    <link href="vendor/lightbox/lightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/login-style.css"/>
+
     <title></title>
 </head>
 <body>
+    <nav>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Гостевой дом "Уютно"</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Загрузка изображений</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Выйти</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </nav>
 
    <div class="container">
        <div class="form-group col-sm-12">
            <input id="file-5" class="file" type="file" multiple data-preview-file-type="any" data-upload-url="#">
        </div>
    </div>
+    <div class="container">
+        <div class="divider"></div>
+
+    </div>
+    <div class="container slider">
+        <h3 class="text-center">Slider</h3>
+        <div class="row">
+            <div class="col-sm-4 thumbnail">
+                <img src="images/slider/slide1.jpg" alt=""/>
+                <div class="btn-remove">
+                    <i class="glyphicon glyphicon-remove"></i>
+                </div>
+            </div>
+
+            <div class="col-sm-4 thumbnail">
+                <img src="images/slider/slide2.jpg" alt=""/>
+                <div class="btn-remove">
+                    <i class="glyphicon glyphicon-remove"></i>
+                </div>
+            </div>
+
+            <div class="col-sm-4 text-center add-img">
+                <div class="thumbnail">
+                    <i class="glyphicon glyphicon-plus"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+  <div class="container">
+      <div class="divider"></div>
+
+  </div>
+
+    <div class="container gallery">
+        <h3 class="text-center">Gallery</h3>
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="images/gallery/image-1.jpg" class="gallery-link thumbnail" data-lightbox="gallery-image">
+                    <img src="images/gallery/image-1.jpg" alt=""/>
+                </a>
+                <div class="btn-remove">
+                    <i class="glyphicon glyphicon-remove"></i>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <a href="images/gallery/image-2.jpg" class="gallery-link thumbnail" data-lightbox="gallery-image">
+                    <img src="images/gallery/image-1.jpg" alt=""/>
+                </a>
+                <div class="btn-remove">
+                    <i class="glyphicon glyphicon-remove"></i>
+                </div>
+            </div>
+            <div class="col-sm-4 text-center add-img">
+                <a href="#" class="thumbnail">
+                    <i class="glyphicon glyphicon-plus"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="node_modules/bootstrap-fileinput/js/fileinput.min.js"></script>
+    <script src="vendor/lightbox/lightbox.min.js"></script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true
+        })
+    </script>
 
 </body>
 </html>

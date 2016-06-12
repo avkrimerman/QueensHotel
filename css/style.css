@@ -7,6 +7,10 @@
     font-family: 'Georgia';
     src: url(../fonts/Georgia/Georgia.ttf);
 }
+@font-face {
+    font-family: 'Bad Script';
+    src: url(../fonts/BadScript/BadScript-Regular.ttf);
+}
 
 @font-face {
     font-family: 'Gabriola';
@@ -14,7 +18,7 @@
 }
 
 body {
-    background: url("../images/bg.png");
+    background: url("../images/wood_pattern/wood-pattern.png");
     font-family: 'Georgia';
     font-weight: normal;
 }
@@ -55,21 +59,22 @@ body {
 }
 
 .logo a {
-    margin: 0px 30px;
-    font-family: 'Dancing Script', cursive;;
-    font-size: 50px;
-    color: #36302c;
+    line-height: 50px;
+    font-family: 'Bad Script', cursive;;
+    font-size: 66px;
+    color: #ffffff;
     font-weight: bold;
     text-decoration: none;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .slogan {
+    color: #ffffff;
     display: inline;
-    font-size: 16px;
-    padding: 0 10px;
-    font-family: 'Georgia', serif;
-    font-style: italic;
+    font-size: 26px;
+    padding: 0 10px 0 20px;
+    font-family: 'Bad Script', serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 @media (min-width: 1200px) {
@@ -91,7 +96,7 @@ body {
 }
 
 .navbar-default {
-    background: url("../images/bg-mainmenu.png") repeat-x transparent;
+    background: url("../images/navigation/bg-mainmenu.png") repeat-x transparent;
     border-color: transparent;
 }
 
@@ -127,15 +132,15 @@ body {
     top: 20px;
     left: 50%;
     transform: translate(-50%);
-    width: 250px;
+    width: 180px;
     height: 80px;
     background: rgba(255, 255, 255, .5);
     z-index: -1;
-    -webkit-filter: blur(20px);
-    -moz-filter: blur(20px);
-    -ms-filter: blur(20px);
-    -o-filter: blur(20px);
-    filter: blur(20px);
+    -webkit-filter: blur(35px);
+    -moz-filter: blur(35px);
+    -ms-filter: blur(35px);
+    -o-filter: blur(35px);
+    filter: blur(35px);
 }
 
 .glyphicon-star {
@@ -360,7 +365,7 @@ h4{
     color: #d5c6b1;
     font-size: 12px;
     font-weight: 200;
-    background: url("../images/bg-copyright.png");
+    background: url("../images/navigation/bg-copyright.png");
 }
 .copyright p{
     margin: 0;

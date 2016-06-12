@@ -1,6 +1,9 @@
 body {
     background: #eee !important;
 }
+.navbar-default{
+    background-color: #fff;
+}
 
 .wrapper {
     margin-top: 80px;
@@ -43,3 +46,48 @@ body {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
+.file-preview{
+    background: #fff;
+}
+.slider, .gallery{
+   padding: 40px 0;
+}
+ .col-sm-4 img {
+    width: 100%;
+    position: relative;
+
+}
+.col-sm-4 {
+    margin: 15px 0;
+}
+.btn-remove {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    background: #fff;
+    position: absolute;
+    right: 0;
+    top: -10px;
+}
+.btn-remove .glyphicon{
+    line-height: 2;
+}
+.add-img .thumbnail{
+    cursor: pointer;
+    height: 240px;
+}
+.slider .add-img .thumbnail{
+    height: 212px;
+}
+ .add-img .glyphicon-plus{
+    top: 49%;
+    font-size: 22px;
+     color: #333;
+}
+ .divider {
+     height: 2px;
+     background-color: #ccc;
+     margin: 30px 0;
+ }

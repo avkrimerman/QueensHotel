@@ -1,0 +1,36 @@
+form {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    background: #ececec;
+    padding: 80px;
+}
+
+form input[type='tel'] {
+    width: 200px;
+    height: 30px;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.add-number {
+    width: 100px;
+    margin: 0 auto;
+    cursor: pointer;
+    text-align: center;
+    color: #848484;
+    border-bottom: 1px dashed #848484;
+}
+
+form button {
+    padding: 10px 25px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 7%;
+    color: #fff;
+    font-size: 12px;
+    background: #3285c8;
+    border: none;
+}
