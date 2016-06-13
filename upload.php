@@ -65,7 +65,7 @@ $images = json_decode(file_get_contents($dir . DIRECTORY_SEPARATOR . 'images.jso
     <meta charset="UTF-8">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="node_modules/bootstrap-fileinput/css/fileinput.min.css"/>
-    <link href="vendor/lightbox/lightbox.min.css" rel="stylesheet">
+    <link href="node_modules/lightbox2/dist/css/lightbox.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/login-style.css"/>
 
     <title></title>
@@ -207,7 +207,7 @@ $images = json_decode(file_get_contents($dir . DIRECTORY_SEPARATOR . 'images.jso
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="node_modules/bootstrap-fileinput/js/fileinput.min.js"></script>
-<script src="vendor/lightbox/lightbox.min.js"></script>
+<script src="node_modules/lightbox2/dist/js/lightbox.min.js"></script>
 <script>
     lightbox.option({
         'resizeDuration': 200,

@@ -8,6 +8,9 @@
   "dependencies": {
     "bootstrap": "^3.3.6",
     "bootstrap-fileinput": "^4.2.8",
-    "jquery": "^2.2.4"
+    "flexslider": "^2.6.0",
+    "jquery": "^2.2.4",
+    "lightbox": "^0.5.0",
+    "lightbox2": "^2.8.2"
   }
 }

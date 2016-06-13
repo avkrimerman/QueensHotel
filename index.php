@@ -9,7 +9,7 @@ $images = json_decode(file_get_contents($dir . DIRECTORY_SEPARATOR . 'images.jso
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
-    <link rel="stylesheet" href="vendor/flexSlider/flexslider.css"/>
+    <link rel="stylesheet" href="node_modules/flexslider/flexslider.css"/>
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
@@ -141,7 +141,7 @@ $images = json_decode(file_get_contents($dir . DIRECTORY_SEPARATOR . 'images.jso
 
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="vendor/flexSlider/jquery.flexslider-min.js"></script>
+    <script src="node_modules/flexslider/jquery.flexslider-min.js"></script>
     <script>
         $(window).load(function() {
             // The slider being synced must be initialized first
