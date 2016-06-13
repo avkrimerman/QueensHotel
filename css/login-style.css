@@ -125,3 +125,7 @@ body {
     height: 500px;
     overflow: scroll;
 }
+
+.modal-body .preview {
+    height: 120px;
+}
