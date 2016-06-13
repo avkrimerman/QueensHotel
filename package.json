@@ -3,15 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "nastya",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "bootstrap": "^3.3.6",
     "bootstrap-fileinput": "^4.2.8",
-    "jquery": "^2.2.4",
-    "laravel": "0.0.1"
+    "jquery": "^2.2.4"
   }
 }

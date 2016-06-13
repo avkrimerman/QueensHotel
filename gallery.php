@@ -1,10 +1,16 @@
+<?php
+$dir = dirname(__FILE__);
+$images = json_decode(file_get_contents($dir . DIRECTORY_SEPARATOR . 'images.json'), true)['gallery'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
+    <link href="vendor/lightbox/lightbox.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css"/>
+
 </head>
 <body>
     <header>
@@ -15,8 +21,7 @@
                     <p class="slogan">гостевой дом</p>
                 </div>
                 <div class="blurred"></div>
-            </div>
-        </div>
+            </div>        </div>
     </header>
     <section class="container">
         <div class="background-section">
@@ -37,37 +42,26 @@
                         <div class="collapse navbar-collapse navbar-ex1-collapse text-uppercase">
                             <ul class="nav navbar-nav">
                                 <li><a href="index.php">Home</a></li>
-                                <li class="active"><a href="about.html">About</a></li>
+                                <li><a href="about.html">About</a></li>
                                 <li><a href="accomodation.html">Accomodation</a></li>
-                                <li><a href="gallery.php">Gallery</a></li>
+                                <li class="active"><a href="gallery.php">Gallery</a></li>
                                 <li><a href="contacts.html">Contacts</a></li>
                             </ul>
                         </div>
                     </nav>
-
-                    <div class="about-section clearfix">
-                        <h4 class="col-sm-12">About Us</h4>
-
-                        <div class="about-info col-sm-12">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam ducimus fugit
-                                laboriosam nihil quasi, qui reiciendis rem repellat. Cupiditate, ducimus eveniet
-                                exercitationem
-                                iusto placeat possimus quod soluta sunt temporibus.</p>
-
-                            <div class="about-img col-sm-12 img-responsive">
-                                <img src="images/about-page/zatoka.jpg" alt=""/>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam ducimus fugit
-                                laboriosam nihil quasi, qui reiciendis rem repellat. Cupiditate, ducimus eveniet
-                                exercitationem
-                                iusto placeat possimus quod soluta sunt temporibus. Lorem ipsum dolor sit amet,
-                                consectetur adipisicing elit. Aliquam architecto dolores dolorum error, inventore labore
-                                minima odit porro reprehenderit voluptatem?</p>
-
+                    <section class="gallery">
+                        <div class="row">
+                            <?php
+                            foreach ($images as $key => $value) {
+                                echo '<div class="col-sm-4 gallery-item">'.
+                                    '<a href="'.$value.'" class="gallery-link" data-lightbox="gallery-image">'.
+                                    '<img src="'.$value.'" alt=""/>'.
+                                    '</a>'.
+                                    '</div>';
+                            }
+                            ?>
                         </div>
-
-                    </div>
-
+                    </section>
                     <div class="footer clearfix">
                         <div class="copyright">
                             <p>Copyright © 2012. All Rights Reserved . Theme design by <span>TemplateSquare.com</span>
@@ -76,12 +70,16 @@
                     </div>
                 </div>
             </div>
-
-    </div>
+        </div>
     </section>
-
-
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="vendor/lightbox/lightbox.min.js"></script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true
+        })
+    </script>
 </body>
 </html>

@@ -1,3 +1,8 @@
+<?php
+session_start();
+$dir = dirname(__FILE__);
+$images = json_decode(file_get_contents($dir . DIRECTORY_SEPARATOR . 'images.json'), true)['slider'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +16,7 @@
     <header>
         <div class="container logo-section">
             <div class="logo text-center">
-                <a href="index.html">Уютно</a>
+                <a href="index.php">Уютно</a>
                 <div class="slogan-wrap">
                     <p class="slogan">гостевой дом</p>
                 </div>
@@ -36,10 +41,10 @@
                         </div>
                         <div class="collapse navbar-collapse navbar-ex1-collapse text-uppercase">
                             <ul class="nav navbar-nav">
-                                <li class="active"><a href="index.html">Home</a></li>
+                                <li class="active"><a href="index.php">Home</a></li>
                                 <li><a href="about.html">About</a></li>
                                 <li><a href="accomodation.html">Accomodation</a></li>
-                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="gallery.php">Gallery</a></li>
                                 <li><a href="contacts.html">Contacts</a></li>
                             </ul>
                         </div>
@@ -49,46 +54,20 @@
                     <div class="slider-section">
                         <div id="slider" class="flexslider">
                             <ul class="slides">
-                                <li>
-                                    <img src="images/slider/slide1.jpg"/>
-                                </li>
-                                <li>
-                                    <img src="images/slider/slide2.jpg"/>
-                                </li>
-                                <li>
-                                    <img src="images/slider/slide3.jpg"/>
-                                </li>
-                                <li>
-                                    <img src="images/slider/slide4.jpg"/>
-                                </li>
-                                <li>
-                                    <img src="images/slider/slide5.jpg"/>
-                                </li>
-                                <li>
-                                    <img src="images/slider/slide6.jpg"/>
-                                </li>
+                                <?php
+                                foreach ($images as $key => $value) {
+                                    echo '<li><img src="'.$value.'"/></li>';
+                                }
+                                ?>
                             </ul>
                         </div>
                         <div id="carousel" class="flexslider">
                             <ul class="slides">
-                                <li>
-                                    <img src="images/slider/slide1.jpg"/>
-                                </li>
-                                <li>
-                                    <img src="images/slider/slide2.jpg"/>
-                                </li>
-                                <li>
-                                    <img src="images/slider/slide3.jpg"/>
-                                </li>
-                                <li>
-                                    <img src="images/slider/slide4.jpg"/>
-                                </li>
-                                <li>
-                                    <img src="images/slider/slide5.jpg"/>
-                                </li>
-                                <li>
-                                    <img src="images/slider/slide6.jpg"/>
-                                </li>
+                                <?php
+                                foreach ($images as $key => $value) {
+                                    echo '<li><img src="'.$value.'"/></li>';
+                                }
+                                ?>
                             </ul>
                         </div>
                     </div>
