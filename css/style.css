@@ -18,7 +18,8 @@
 }
 
 body {
-    background: url("../images/wood_pattern/wood-pattern.png");
+    background: url("../images/wood_pattern/wood.jpg") no-repeat center;
+    background-size: cover;
     font-family: 'Georgia';
     font-weight: normal;
 }
