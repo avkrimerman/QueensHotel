@@ -18,39 +18,42 @@ $images = json_decode(file_get_contents($dir . DIRECTORY_SEPARATOR . 'images.jso
     <header>
         <div class="container logo-section">
             <div class="logo text-center">
-                <a href="index.php">Уютно</a>
+                <a href="index.php">Гостевой дом 'Уютно'</a>
                 <div class="slogan-wrap">
-                    <p class="slogan">гостевой дом</p>
+                    <p class="slogan"> +38 (067)-400-11-33
+                        Одесская область, <br>
+                        г. Черноморск (Ильичёвск),
+                        Капитанский переулок 7</p>
                 </div>
                 <div class="blurred"></div>
             </div>        </div>
     </header>
     <section class="container">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse text-uppercase">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.php">Главная</a></li>
+                    <li><a href="about.html">О Нас</a></li>
+                    <li><a href="accomodation.html">Номера</a></li>
+                    <li><a href="apartments.html">Аренда квартир</a></li>
+                    <li  class="active"><a href="gallery.php">Галерея</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+
         <div class="background-section">
             <div class="border-section">
                 <div class="inner-background">
-                    <nav class="navbar navbar-default" role="navigation">
-                        <div class="bg-menu-l"><img src="images/navigation/menu-l.png" alt=""/></div>
-                        <div class="bg-menu-r"><img src="images/navigation/menu-r.png" alt=""/></div>
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse"
-                                    data-target=".navbar-ex1-collapse">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                        </div>
-                        <div class="collapse navbar-collapse navbar-ex1-collapse text-uppercase">
-                            <ul class="nav navbar-nav">
-                                <li><a href="index.php">Home</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="accomodation.html">Accomodation</a></li>
-                                <li class="active"><a href="gallery.php">Gallery</a></li>
-                                <li><a href="contacts.html">Contacts</a></li>
-                            </ul>
-                        </div>
-                    </nav>
                     <section class="gallery">
                         <div class="row">
                             <?php
