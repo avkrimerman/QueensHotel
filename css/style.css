@@ -33,6 +33,9 @@ body {
     background-color: transparent;
     color: rgb(187, 170, 161);
 }
+li.apart-link {
+    text-decoration: underline;
+}
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -40,6 +43,7 @@ body {
     color: rgb(187, 170, 161);
 
 }
+
 @media (min-width: 768px) {
     .navbar-default .navbar-nav > li > a:hover,
     .navbar-default .navbar-nav > li > a:focus {
@@ -59,20 +63,27 @@ body {
 }
 
 .logo a {
-    line-height: 90px;
+    line-height: 50px;
     font-family: 'Bad Script', cursive;;
-    font-size: 66px;
+    font-size: 48px;
     color: #ffffff;
     font-weight: bold;
     text-decoration: none;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
+.tel {
+    margin-top: 18px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.address{
+    font-weight: normal;
+    font-size: 16px;
 
+}
 .slogan {
     color: #ffffff;
     display: inline;
-    font-size: 22px;
-    padding: 0 10px 0 20px;
     font-family: 'Bad Script', serif;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
@@ -325,7 +336,9 @@ h4{
     padding: 3px 0;
 }
 
-.welcome-img, .rest-img {
+.welcome-img,
+.rest-img,
+.sale-img {
     width: 350px;
     height: 180px;
     border: 4px solid #e3d6c0;
@@ -334,6 +347,11 @@ h4{
 
 .welcome-img {
     background: url("../images/services/1.jpg") no-repeat center center;
+    background-size: cover;
+
+}
+.sale-img {
+    background: url("../images/services/akciya.png") no-repeat center center;
     background-size: cover;
 
 }
@@ -457,12 +475,6 @@ h4{
     color: #6b5042;
 
 }
-.contacts-section .address{
-    padding-bottom: 0;
-    margin-bottom: 0;
-    font-size: 16px;
-}
-
 .gm-style .place-card-large{
     display: none;
 }

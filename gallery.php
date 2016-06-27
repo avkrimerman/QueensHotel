@@ -44,9 +44,9 @@ $images = json_decode(file_get_contents($dir . DIRECTORY_SEPARATOR . 'images.jso
                     <li><a href="index.php">Главная</a></li>
                     <li><a href="about.html">О Нас</a></li>
                     <li><a href="accomodation.html">Номера</a></li>
-                    <li><a href="apartments.html">Аренда квартир</a></li>
                     <li  class="active"><a href="gallery.php">Галерея</a></li>
                     <li><a href="contacts.html">Контакты</a></li>
+                    <li class="apart-link"><a href="apartments.html">Аренда квартир</a></li>
                 </ul>
             </div>
         </nav>

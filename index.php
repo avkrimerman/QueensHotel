@@ -18,15 +18,18 @@ $images = json_decode(file_get_contents($dir . DIRECTORY_SEPARATOR . 'images.jso
     <header>
         <div class="container logo-section">
             <div class="logo text-center">
-                <a href="index.php">Гостевой дом 'Уютно'</a>
+                <a href="index.php">Гостевой дом "Уютно"</a>
                 <div class="slogan-wrap">
-                    <p class="slogan"> +38 (067)-400-11-33
-                        Одесская область, <br>
-                        г. Черноморск (Ильичёвск),
-                        Капитанский переулок 7</p>
+                    <div class="slogan">
+                        <div class="tel">+38 (067)-400-11-33</div>
+                        <div class="address">
+                            Одесская область, г. Черноморск (Ильичёвск), Капитанский переулок 7
+                        </div>
+                    </div>
                 </div>
                 <div class="blurred"></div>
-            </div>        </div>
+            </div>
+        </div>
     </header>
     <section class="container">
         <nav class="navbar navbar-default" role="navigation">
@@ -46,10 +49,10 @@ $images = json_decode(file_get_contents($dir . DIRECTORY_SEPARATOR . 'images.jso
                     <li><a href="accomodation.html">Номера</a></li>
                     <li><a href="gallery.php">Галерея</a></li>
                     <li><a href="contacts.html">Контакты</a></li>
-                    <li class="rent-apart"><a href="apartments.html">Аренда квартир</a></li>
-
+                    <li class="apart-link"><a href="apartments.html">Аренда квартир</a></li>
                 </ul>
             </div>
+
         </nav>
 
         <div class="background-section">
@@ -61,7 +64,7 @@ $images = json_decode(file_get_contents($dir . DIRECTORY_SEPARATOR . 'images.jso
                             <ul class="slides">
                                 <?php
                                 foreach ($images as $key => $value) {
-                                    echo '<li><img src="'.$value.'"/></li>';
+                                    echo '<li><img src="' . $value . '"/></li>';
                                 }
                                 ?>
                             </ul>
@@ -70,7 +73,7 @@ $images = json_decode(file_get_contents($dir . DIRECTORY_SEPARATOR . 'images.jso
                             <ul class="slides">
                                 <?php
                                 foreach ($images as $key => $value) {
-                                    echo '<li><img src="'.$value.'"/></li>';
+                                    echo '<li><img src="' . $value . '"/></li>';
                                 }
                                 ?>
                             </ul>
@@ -83,7 +86,7 @@ $images = json_decode(file_get_contents($dir . DIRECTORY_SEPARATOR . 'images.jso
 
 
                     <div class="services clearfix">
-                        <div class="column col-md-6">
+                        <div class="column col-md-4">
                             <h4>Добро пожаловать</h4>
 
                             <div class="welcome-img img-responsive"></div>
@@ -91,11 +94,19 @@ $images = json_decode(file_get_contents($dir . DIRECTORY_SEPARATOR . 'images.jso
                                 <p>Вас приветствует гостевой-дом «Уютно»!
                                     Мини-отель «Уютно» расположен в городе Черноморск (Ильичёвск).
                                     Наш гостевой дом находится в трёх минутах ходьбы от моря. Пляж широкий и песчаный.
-                                   </p>
+                                </p>
                             </div>
                             <a class="btn read-more" href="about.html">Далее</a>
                         </div>
-                        <div class="column col-md-6">
+                        <div class="column col-md-4">
+                            <h4>Акция</h4>
+                            <div class="sale-img img-responsive"></div>
+                            <div class="info">
+                                <p>До 05 июля при поселении на 5 дней - 6 день в подарок (т.е.+1 день)б а на 10 дней + 2 дня в подарок
+                                </p>
+                            </div>
+                        </div>
+                        <div class="column col-md-4">
                             <h4>Барбекю</h4>
                             <div class="rest-img img-responsive"></div>
                             <div class="info">
