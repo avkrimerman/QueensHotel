@@ -102,7 +102,7 @@ $images = json_decode(file_get_contents($dir . DIRECTORY_SEPARATOR . 'images.jso
                             <h4>Акция</h4>
                             <div class="sale-img img-responsive"></div>
                             <div class="info">
-                                <p>До 05 июля при поселении на 5 дней - 6 день в подарок (т.е.+1 день)б а на 10 дней + 2 дня в подарок
+                                <p>До 05 июля при поселении на 5 дней +1 день в подарок, а на 10 дней + 2 дня в подарок
                                 </p>
                             </div>
                         </div>
