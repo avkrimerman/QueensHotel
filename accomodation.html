@@ -6,21 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="node_modules/flexslider/flexslider.css"/>
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
     <header>
         <div class="container logo-section">
-            <div class="logo text-center">
-                <a href="index.php">Гостевой дом 'Уютно'</a>
-                <div class="slogan-wrap">
-                    <p class="slogan"> +38 (067)-400-11-33
-                        Одесская область, <br>
-                        г. Черноморск (Ильичёвск),
-                        Капитанский переулок 7</p>
+            <div class="container logo-section">
+                <div class="logo text-center">
+                    <a href="index.php">Гостевой дом "Уютно"</a>
+                    <div class="slogan-wrap">
+                        <div class="slogan">
+                            <div class="tel">+38 (067)-400-11-33</div>
+                            <div class="address">
+                                Одесская область, г. Черноморск (Ильичёвск), Капитанский переулок 7
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blurred"></div>
                 </div>
-                <div class="blurred"></div>
-            </div>        </div>
+            </div>
+        </div>
     </header>
     <section class="container">
         <nav class="navbar navbar-default" role="navigation">
@@ -39,6 +45,7 @@
                     <li><a href="about.html">О Нас</a></li>
                     <li class="active"><a href="accomodation.html">Номера</a></li>
                     <li><a href="gallery.php">Галерея</a></li>
+                    <li><a href="about-city.html">О Черноморске</a></li>
                     <li><a href="contacts.html">Контакты</a></li>
                     <li class="apart-link"><a href="apartments.html">Аренда квартир</a></li>
                 </ul>
@@ -63,55 +70,84 @@
                                 <li>wi-fi интернет</li>
                             </ul>
                             <p>На озелененной территории гостевого дома «Уютно» есть удобные беседки,
-                                а также мангал и всё, что нужно для приготовления шашлыка и барбекю. Безлимитный интернет Wi-Fi.</p>
+                                а также мангал и всё, что нужно для приготовления шашлыка и барбекю. Безлимитный
+                                интернет Wi-Fi.</p>
                             <ul class="room-list">
-                                <li>Июнь/Июль - 1000 грн.</li>
-                                <li>Август - 1400 грн.</li>
-                                <li> Сентябрь - 1000 грн.</li>
+                                <li>Июнь/Июль - 800 грн.</li>
+                                <li>Август - 600 грн.</li>
+                                <li>Сентябрь - 700 грн.</li>
                             </ul>
                         </div>
 
                         <div class="rooms clearfix">
-                            <div class="row">
-                                <div class="column col-sm-6">
-                                    <div class="room-img img-responsive">
-                                        <img src="images/accomodation/slide1.jpg" alt=""/>
-                                    </div>
-                                </div>
-                                <div class="column col-sm-6 ">
-                                    <div class="room-img img-responsive">
-                                        <img src="images/accomodation/slide2.jpg" alt=""/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="column col-sm-6 ">
-                                    <div class="room-img img-responsive">
-                                        <img src="images/accomodation/slide3.jpg" alt=""/>
-                                    </div>
-                                </div>
-                                <div class="column col-sm-6">
-                                    <div class="room-img img-responsive">
-                                        <img src="images/accomodation/slide4.jpg" alt=""/>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                            <div class="column col-sm-6">
+                                <div class="room-img img-responsive">
+                                    <div class="flexslider">
+                                        <ul class="slides">
+                                            <li data-thumb="images/accomodation/room1/1.JPG">
+                                                <img src="images/accomodation/room1/1.JPG"/>
+                                            </li>
+                                            <li data-thumb="images/accomodation/room1/2.JPG">
+                                                <img src="images/accomodation/room1/2.JPG"/>
+                                            </li>
+                                            <li data-thumb="images/accomodation/room1/3.JPG">
+                                                <img src="images/accomodation/room1/3.JPG"/>
+                                            </li>
+                                            <li data-thumb="images/accomodation/room1/4.JPG">
+                                                <img src="images/accomodation/room1/4.JPG"/>
+                                            </li>
 
-                    <div class="footer clearfix">
-                        <div class="copyright">
-                            <p>Copyright © 2012. All Rights Reserved . Theme design by <span>TemplateSquare.com</span>
-                            </p>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column col-sm-6">
+                                <div class="room-img img-responsive">
+                                    <div class="flexslider">
+                                        <ul class="slides">
+                                            <li data-thumb="images/accomodation/room2/1.JPG">
+                                                <img src="images/accomodation/room2/1.JPG"/>
+                                            </li>
+                                            <li data-thumb="images/accomodation/room2/2.JPG">
+                                                <img src="images/accomodation/room2/2.JPG"/>
+                                            </li>
+                                            <li data-thumb="images/accomodation/room2/3.JPG">
+                                                <img src="images/accomodation/room2/3.JPG"/>
+                                            </li>
+                                            <li data-thumb="images/accomodation/room2/4.JPG">
+                                                <img src="images/accomodation/room2/4.JPG"/>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="footer clearfix">
+                    <div class="copyright">
+                        <p>Copyright © 2012. All Rights Reserved . Theme design by <span>TemplateSquare.com</span>
+                        </p>
+                    </div>
+                </div>
             </div>
+        </div>
 
     </section>
 
 
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/flexslider/jquery.flexslider-min.js"></script>
+    <script>
+        $(window).load(function() {
+            $('.flexslider').flexslider({
+                controlNav: "thumbnails",
+                animation: "slide",
+                slideshow: false,
+            });
+        });
+    </script>
 </body>
 </html>

@@ -48,6 +48,7 @@ $images = json_decode(file_get_contents($dir . DIRECTORY_SEPARATOR . 'images.jso
                     <li><a href="about.html">О Нас</a></li>
                     <li><a href="accomodation.html">Номера</a></li>
                     <li><a href="gallery.php">Галерея</a></li>
+                    <li><a href="about-city.html">О Черноморске</a></li>
                     <li><a href="contacts.html">Контакты</a></li>
                     <li class="apart-link"><a href="apartments.html">Аренда квартир</a></li>
                 </ul>
@@ -86,7 +87,7 @@ $images = json_decode(file_get_contents($dir . DIRECTORY_SEPARATOR . 'images.jso
 
 
                     <div class="services clearfix">
-                        <div class="column col-md-4">
+                        <div class="column col-md-6">
                             <h4>Добро пожаловать</h4>
 
                             <div class="welcome-img img-responsive"></div>
@@ -98,15 +99,7 @@ $images = json_decode(file_get_contents($dir . DIRECTORY_SEPARATOR . 'images.jso
                             </div>
                             <a class="btn read-more" href="about.html">Далее</a>
                         </div>
-                        <div class="column col-md-4">
-                            <h4>Акция</h4>
-                            <div class="sale-img img-responsive"></div>
-                            <div class="info">
-                                <p>До 05 июля при поселении на 5 дней +1 день в подарок, а на 10 дней + 2 дня в подарок
-                                </p>
-                            </div>
-                        </div>
-                        <div class="column col-md-4">
+                        <div class="column col-md-6">
                             <h4>Барбекю</h4>
                             <div class="rest-img img-responsive"></div>
                             <div class="info">

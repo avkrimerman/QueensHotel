@@ -2,7 +2,7 @@
 
 session_start();
 
-if (array_key_exists('username', $_SESSION))
+if (! array_key_exists('username', $_SESSION))
 {
     echo json_encode(['status' => false, 'msg' => 'Not Authorized']);
     exit();

@@ -1,35 +1,27 @@
-<?php
-$dir = dirname(__FILE__);
-$images = json_decode(file_get_contents($dir . DIRECTORY_SEPARATOR . 'images.json'), true)['gallery'];
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>About</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
-    <link href="node_modules/lightbox2/dist/css/lightbox.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css"/>
-
 </head>
 <body>
     <header>
         <div class="container logo-section">
-            <div class="container logo-section">
-                <div class="logo text-center">
-                    <a href="index.php">Гостевой дом "Уютно"</a>
-                    <div class="slogan-wrap">
-                        <div class="slogan">
-                            <div class="tel">+38 (067)-400-11-33</div>
-                            <div class="address">
-                                Одесская область, г. Черноморск (Ильичёвск), Капитанский переулок 7
-                            </div>
+            <div class="logo text-center">
+                <a href="index.php">Гостевой дом "Уютно"</a>
+                <div class="slogan-wrap">
+                    <div class="slogan">
+                        <div class="tel">+38 (067)-400-11-33</div>
+                        <div class="address">
+                            Одесская область, г. Черноморск (Ильичёвск), Капитанский переулок 7
                         </div>
                     </div>
-                    <div class="blurred"></div>
                 </div>
+                <div class="blurred"></div>
             </div>
         </div>
     </header>
@@ -49,8 +41,8 @@ $images = json_decode(file_get_contents($dir . DIRECTORY_SEPARATOR . 'images.jso
                     <li><a href="index.php">Главная</a></li>
                     <li><a href="about.html">О Нас</a></li>
                     <li><a href="accomodation.html">Номера</a></li>
-                    <li  class="active"><a href="gallery.php">Галерея</a></li>
-                    <li><a href="about-city.html">О Черноморске</a></li>
+                    <li><a href="gallery.php">Галерея</a></li>
+                    <li class="active"><a href="about-city.html">О Черноморске</a></li>
                     <li><a href="contacts.html">Контакты</a></li>
                     <li class="apart-link"><a href="apartments.html">Аренда квартир</a></li>
                 </ul>
@@ -60,19 +52,27 @@ $images = json_decode(file_get_contents($dir . DIRECTORY_SEPARATOR . 'images.jso
         <div class="background-section">
             <div class="border-section">
                 <div class="inner-background">
-                    <section class="gallery">
-                        <div class="row">
-                            <?php
-                            foreach ($images as $key => $value) {
-                                echo '<div class="col-sm-4 gallery-item">'.
-                                    '<a href="'.$value.'" class="gallery-link" data-lightbox="gallery-image">'.
-                                    '<img src="'.$value.'" alt=""/>'.
-                                    '</a>'.
-                                    '</div>';
-                            }
-                            ?>
+
+                    <div class="about-section clearfix">
+                        <h4 class="col-sm-12">О Черноморске</h4>
+
+                        <div class="about-info col-sm-12">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium,
+                                amet consectetur cupiditate deserunt dolorum expedita explicabo facere fugit inventore
+                                laboriosam libero modi, mollitia natus necessitatibus, nihil officiis provident quas
+                                quasi saepe sunt tenetur voluptas voluptate voluptates! Hic ipsa, ipsam magnam pariatur
+                                perferendis porro possimus quis quod. Eveniet totam vero vitae.
+                            </p>
+
+                            <div class="about-img col-sm-12 img-responsive">
+                                <img src="images/about-page/zatoka.jpg" alt=""/>
+                            </div>
+
                         </div>
-                    </section>
+
+                    </div>
+
                     <div class="footer clearfix">
                         <div class="copyright">
                             <p>Copyright © 2012. All Rights Reserved . Theme design by <span>TemplateSquare.com</span>
@@ -81,16 +81,12 @@ $images = json_decode(file_get_contents($dir . DIRECTORY_SEPARATOR . 'images.jso
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
+
+
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="node_modules/lightbox2/dist/js/lightbox.min.js"></script>
-    <script>
-        lightbox.option({
-            'resizeDuration': 200,
-            'wrapAround': true
-        })
-    </script>
 </body>
 </html>
