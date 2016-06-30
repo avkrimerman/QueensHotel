@@ -1,1 +1,31 @@
-{"slider":{"1":"http:\/\/localhost:8000\/upload-files\/1.JPG","2":"http:\/\/localhost:8000\/upload-files\/DSC_0091.JPG","3":"http:\/\/localhost:8000\/upload-files\/DSC_0099.JPG","4":"http:\/\/localhost:8000\/upload-files\/DSC_0107.JPG","5":"http:\/\/localhost:8000\/upload-files\/DSC_0111.JPG","6":"http:\/\/localhost:8000\/upload-files\/DSC_0135.JPG","7":"http:\/\/localhost:8000\/upload-files\/2.JPG"},"gallery":["http:\/\/localhost:8000\/upload-files\/%201.2.JPG","http:\/\/localhost:8000\/upload-files\/%202.JPG","http:\/\/localhost:8000\/upload-files\/%204.JPG","http:\/\/localhost:8000\/upload-files\/1.JPG","http:\/\/localhost:8000\/upload-files\/2.JPG","http:\/\/localhost:8000\/upload-files\/DSC_0083.JPG","http:\/\/localhost:8000\/upload-files\/DSC_0084.JPG","http:\/\/localhost:8000\/upload-files\/DSC_0087.JPG","http:\/\/localhost:8000\/upload-files\/DSC_0091.JPG","http:\/\/localhost:8000\/upload-files\/DSC_0099.JPG","http:\/\/localhost:8000\/upload-files\/DSC_0101.JPG","http:\/\/localhost:8000\/upload-files\/DSC_0107.JPG","http:\/\/localhost:8000\/upload-files\/DSC_0111.JPG","http:\/\/localhost:8000\/upload-files\/DSC_0128.JPG","http:\/\/localhost:8000\/upload-files\/DSC_0132.JPG","http:\/\/localhost:8000\/upload-files\/DSC_0135.JPG"]}
+{
+  "slider": [
+    "\/upload-files\/1.JPG",
+    "\/upload-files\/DSC_0135.JPG",
+    "\/upload-files\/2.JPG",
+    "\/upload-files\/DSC_0091.JPG",
+    "\/upload-files\/DSC_0107.JPG",
+    "\/upload-files\/DSC_0111.JPG",
+    "\/upload-files\/DSC_0128.JPG",
+    "\/upload-files\/DSC_0132.JPG",
+    "\/upload-files\/DSC_0135.JPG"
+  ],
+  "gallery": [
+    "\/upload-files\/%201.2.JPG",
+    "\/upload-files\/%202.JPG",
+    "\/upload-files\/%204.JPG",
+    "\/upload-files\/1.JPG",
+    "\/upload-files\/2.JPG",
+    "\/upload-files\/DSC_0083.JPG",
+    "\/upload-files\/DSC_0084.JPG",
+    "\/upload-files\/DSC_0087.JPG",
+    "\/upload-files\/DSC_0091.JPG",
+    "\/upload-files\/DSC_0099.JPG",
+    "\/upload-files\/DSC_0101.JPG",
+    "\/upload-files\/DSC_0107.JPG",
+    "\/upload-files\/DSC_0111.JPG",
+    "\/upload-files\/DSC_0128.JPG",
+    "\/upload-files\/DSC_0132.JPG",
+    "\/upload-files\/DSC_0135.JPG"
+  ]
+}

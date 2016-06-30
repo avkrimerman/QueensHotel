@@ -17,7 +17,7 @@ foreach ($src as $key => $value)
 {
     if (! in_array($value, $images[$type]))
     {
-        $images[$type][] = $value;
+        $images[$type][] = str_replace('http://'.$_SERVER['HTTP_HOST'], '', $value);
     }
 }
 
