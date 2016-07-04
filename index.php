@@ -80,6 +80,7 @@ $images = json_decode(file_get_contents($dir . DIRECTORY_SEPARATOR . 'images.jso
                             </ul>
                         </div>
                     </div>
+                    
                     <div class="info-block clearfix">
                         <p class="col-sm-12 text-center">Гостевой дом "Уютно" место для Вашего отдыха <br></p>
                     </div>
