@@ -8,7 +8,7 @@ $images = json_decode(file_get_contents($dir . DIRECTORY_SEPARATOR . 'images.jso
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gallery</title>
+    <title>Галерея</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
     <link href="node_modules/lightbox2/dist/css/lightbox.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css"/>
@@ -75,7 +75,7 @@ $images = json_decode(file_get_contents($dir . DIRECTORY_SEPARATOR . 'images.jso
                     </section>
                     <div class="footer clearfix">
                         <div class="copyright">
-                            <p>Copyright © 2012. All Rights Reserved . Theme design by <span>TemplateSquare.com</span>
+                            <p>Created with love &#10084;<span>by familydev.in.ua</span>
                             </p>
                         </div>
                     </div>

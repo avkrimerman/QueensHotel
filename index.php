@@ -9,7 +9,7 @@ $images = json_decode(file_get_contents($dir . DIRECTORY_SEPARATOR . 'images.jso
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home</title>
+    <title>Главная</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
     <link rel="stylesheet" href="node_modules/flexslider/flexslider.css"/>
     <link rel="stylesheet" href="css/style.css"/>
@@ -117,7 +117,7 @@ $images = json_decode(file_get_contents($dir . DIRECTORY_SEPARATOR . 'images.jso
             </div>
             <div class="footer clearfix">
                 <div class="copyright">
-                    <p>Copyright © 2012. All Rights Reserved . Theme design by <span>TemplateSquare.com</span></p>
+                    <p>Created with love &#10084;<span> by familydev.in.ua</span>
                 </div>
             </div>
         </div>
