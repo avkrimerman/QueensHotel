@@ -8,7 +8,7 @@ $images = json_decode(file_get_contents($dir . DIRECTORY_SEPARATOR . 'images.jso
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>Gallery</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
     <link href="node_modules/lightbox2/dist/css/lightbox.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css"/>
